@@ -1,0 +1,4 @@
+1. Загрузить проект в PyCharm.
+2. Запусть через командную строку python.exe main.python.
+3. Запустить Постман.
+4. В постман заускать GET, POST,GET, PUT,GET, DELETE, GET.
