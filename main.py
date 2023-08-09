@@ -25,6 +25,7 @@ def create_twit():
 def read_twits():
     return jsonify({'twits': twits})
 
+
 # Изменить пост
 @app.route('/twit', methods=['PUT'])
 def change_twit():
