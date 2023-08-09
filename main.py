@@ -25,7 +25,6 @@ def create_twit():
 def read_twits():
     return jsonify({'twits': twits})
 
-
 # Изменить пост
 @app.route('/twit', methods=['PUT'])
 def change_twit():
@@ -38,7 +37,6 @@ def change_twit():
             twits[i] = [body_n, author]
     return jsonify({'Change': 'success'})
 
-
 # Удалить пост
 @app.route('/twit', methods=['delete'])
 def del_twit():
@@ -47,7 +45,6 @@ def del_twit():
     author = twit_json['author']
     twits.remove([body, author])
     return jsonify({'Delete': 'success'})
-
 
 if __name__ == '__main__':
     app.run(debug=True)
